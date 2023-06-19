@@ -1,11 +1,13 @@
 #!/bin/bash
 #
-# This script offers provides the ability to update the Boot
-# There are Legacy Boot payload, set boot options, and install
-# a custom coreboot firmware for supported To Install Any OS WIth Drivers
+# This script offers provides the ability to update the
+# Legacy Boot payload, set boot options, and install
+# a custom coreboot firmware for supported
 # ChromeOS devices
 #
-# Created by TouseefX
+# Bash Script by TouseefX
+#
+# Created By MrChromeBox
 #
 # May be freely distributed and modified as needed,
 # as long as proper attribution is given.
