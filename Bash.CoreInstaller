@@ -4,10 +4,10 @@
 # Legacy Boot payload, set boot options, and install
 # a custom coreboot firmware for supported
 # ChromeOS devices
-#
-# Bash Script by TouseefX
-#
-# Created By MrChromeBox
+# 
+# Modded By TouseefX
+# 
+# Created by Mr.Chromebox <mrchromebox@gmail.com>
 #
 # May be freely distributed and modified as needed,
 # as long as proper attribution is given.
