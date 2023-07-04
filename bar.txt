@@ -1,0 +1,35 @@
+#!/bin/bash
+echo_green "\nWhich do you like to Choose?"
+
+# Select names are used here as a data source
+select os in Curl FixCurl Bash
+do
+
+case $os in
+# Two case values are declared here for matching
+"Curl"|"Curl")
+cd; curl -LO https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
+clear
+exit
+;;
+
+# Two case values are declared here for matching
+"FixCurl"|"FixCurl")
+cd; curl -LOk https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
+clear
+exit
+;;
+
+# Three case values are declared here for matching
+"Bash" | "Bash" | "Bash")
+echo "Well Is Broken You need wget command"
+;;
+
+# Matching with invalid data
+*)
+echo "Invalid entry."
+break
+;;
+esac
+
+done
