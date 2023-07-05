@@ -1,5 +1,5 @@
 #!/bin/bash
-echo_green "\nWhich do you like to Choose?"
+echo "Which do you like to Choose?"
 
 # Select names are used here as a data source
 select os in Curl FixCurl Bash
