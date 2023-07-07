@@ -3,6 +3,12 @@
 GREEN='\033[0;32m'
 echo -e "${GREEN} What Do You Like to Choose"
 
+# giving downloads allows
+chmod a+x bar.txt
+
+# sleeping
+sleep 7
+
 # Select names are used here as a data source
 select os in Curl FixCurl Bash Exit
 do
@@ -10,21 +16,19 @@ do
 case $os in
 # Two case values are declared here for matching
 "Curl"|"Curl")
-echo run it outside and the command is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller
-echo chmod a+x Bash.CoreInstaller is not needed but for safety
-sleep 10
-clear
 cd; curl -LO https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
+echo "run it outside and the command of &os is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller"
+echo "chmod a+x Bash.CoreInstaller is not needed but for safety"
+sleep 7
 clear
 ;;
 
 # Two case values are declared here for matching
 "FixCurl"|"FixCurl")
-echo run it outside and the command is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller
-echo chmod a+x Bash.CoreInstaller is not needed but for safety
-sleep 10
-clear
 cd; curl -LOk https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
+echo "run it outside and the command of &os to run is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller"
+echo "chmod a+x Bash.CoreInstaller is not needed but for safety"
+sleep 7
 clear
 ;;
 
