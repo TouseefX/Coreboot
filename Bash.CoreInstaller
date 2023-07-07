@@ -55,6 +55,11 @@ source ./sources.sh
 source ./firmware.sh
 source ./functions.sh
 
+# giving permsisson
+chmod a+x firmware.sh
+chmod a+x functions.sh
+chmod a+x sources.sh
+
 #set working dir
 cd /tmp
 
