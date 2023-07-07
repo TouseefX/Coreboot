@@ -4,20 +4,26 @@ GREEN='\033[0;32m'
 echo -e "${GREEN} What Do You Like to Choose"
 
 # Select names are used here as a data source
-select os in Curl FixCurl Bash
+select os in Curl FixCurl Bash Exit
 do
 
 case $os in
 # Two case values are declared here for matching
 "Curl"|"Curl")
-echo run it outside and the command is sudo bash Bash.CoreInsaller
+echo run it outside and the command is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller
+echo chmod a+x Bash.CoreInstaller is not needed but for safety
+sleep 10
+clear
 cd; curl -LO https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
 clear
 ;;
 
 # Two case values are declared here for matching
 "FixCurl"|"FixCurl")
-echo run it outside and the command is sudo bash Bash.CoreInsaller
+echo run it outside and the command is chmod a+x Bash.CoreInstaller && sudo bash Bash.CoreInsaller
+echo chmod a+x Bash.CoreInstaller is not needed but for safety
+sleep 10
+clear
 cd; curl -LOk https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller
 clear
 ;;
@@ -25,6 +31,12 @@ clear
 # Three case values are declared here for matching
 "Bash" | "Bash" | "Bash")
 echo -e "${GREEN} You need wget and Run to exit do 4 it outside and here the command bash <(wget -O - https://raw.githubusercontent.com/TouseefX/Coreboot/main/Bash.CoreInstaller)"
+;;
+
+# Two case values are declared here for matching
+"Exit"|"Exit")
+clear
+exit
 ;;
 
 # Matching with invalid data
