@@ -1,6 +1,7 @@
 #!/bin/bash
 # Creating Color Text
 GREEN='\033[0;32m'
+# Adding Text Colored
 echo -e "${GREEN} What Do You Like to Choose"
 
 # giving downloads allows
@@ -8,6 +9,8 @@ chmod a+x bar.txt
 
 # sleeping
 sleep 7
+
+#Started With Chmod
 
 # Select names are used here as a data source
 select os in Curl FixCurl Bash Exit
